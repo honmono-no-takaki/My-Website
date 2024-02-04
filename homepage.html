@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+    <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
+</head>
+</head>
+
+<body>
+
+<!-- navbar -->
+
+<div id="slider"  data-width="100">
+    <button class="control_next">&rarr;</button>
+        <button class="control_prev">&larr;</button>
+        <button class="restart">repeat</button>
+        <ul>
+            <li class="actslide">
+                <div class="slide" >
+                  <img class="image" src="Images/masked-girl (1).png">
+                    <div class="shadow">
+                        <div class="teaser">
+                        
+                            <!--<h3>Fullscreen Slider</h3>-->
+                            
+                            
+                            <!--<p>Slide #1 of 3</p>-->
+                            
+                            
+                        </div> 
+                        
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slide" >
+                  <img class="image" src="Images/erza_edited_edited (1).jpg">
+                    <div class="shadow">
+                            <div class="teaser">
+                        
+                            <!--<h3>Fullscreen Slider</h3>-->
+                            
+                            
+                            <!--<p>Slide #2 of 3</p>-->
+                            
+                            
+                        </div> 
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slide">
+                  <img class="image" src="Images/cosplay-girl (1).png">
+                    <div class="shadow">
+                                <div class="teaser">
+                        
+                            <!--<h3>Fullscreen Slider</h3>-->
+                            
+                            <!--<p>Slide #3 of 3</p>-->
+                            
+                            
+                        </div> 
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="progress">
+            <div class="bar"></div>
+        </div>
+
+    </div>
+
+
+    <!-- about -->
+    <div class="section" class="container" data-bg="black" >
+        <h1 class="text">HEY<span>I</span></h1>
+        <h1 class="text">I'M JONATHAN<span>CREATE</span></h1>
+        <h1 class="text">WELCOME<span>EXPERIENCES</span></h1>
+        <h1 class="text">TO<span><a href="https://stacksorted.com/text-effects/minh-pham" target="_blank">THAT CONNECTS</a></span></h1>
+        <h1 class="text">MY WEBSITE<span><a href="https://twitter.com/juxtopposed" target="_blank">PEOPLE</a></span></h1>
+    </div>
+    <section class="about-us">
+        <div class="about">
+          <img src="Images/Its me.png" class="pic">
+          <div class="text">
+            <h2>VISION</h2>
+            <h5>Front-end Developer & Designer</h5>
+              <p>
+                Hi, I am Jonathan Neo. I'm currently studying at Ngee Ann Polytechnic with a diploma in Immersive Media. 
+                My course focuses on areas like 3D, UI/UX designs and also working with programming languages. I am working 
+                towards my goal of being a designer and developer.
+              </p>
+            <div class="data">
+            <a href="resume.html" class="hire">Resume</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end -->
+
+
+
+
+    
+    <!-- gallery-->
+    <main class='gallery'>
+      <div id="gallery-title">
+        <div class="line">
+          ALWAYS
+        </div>
+        
+        <div class="line">
+          THINKING
+        </div>
+        
+        <div class="line">
+          AND
+        </div>
+
+        <div class="line">
+          INNOVATING
+        </div>
+        
+        <div class="line">
+          BEYOND
+        </div>      
+      </div>
+
+      
+      <div class='gallery-track'>
+        <div class='card'>
+          <div class='card-image-wrapper'>
+            <video autoplay="true" muted playsinline src="Videos/file.mp4" width="100%"></video>
+          </div>
+        </div>
+        <div class='card'>
+          <div class='card-image-wrapper'>
+            <video autoplay="true" muted playsinline src="Videos/Untitled video - Made with Clipchamp (3).mp4" width="100%"></video>
+          </div>
+        </div>
+        <div class='card'>
+          <div class='card-image-wrapper'>
+            <video autoplay="true" muted playsinline src="Videos/Travel Winter holiday slideshow - Made with Clipchamp.mp4" width="100%"></video>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+    <!-- contact form -->
+    <div id="container">
+        <header>
+            <div class="my-text">CONTACT</div>
+        </header>
+        <div class="underline">
+        </div>
+        <form action="#" method="post" id="contact_form">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+          </div>
+          <div class="telephone">
+            <label for="name"></label>
+            <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+          </div>
+          <div class="subject">
+            <label for="subject"></label>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+              <option disabled hidden selected>Subject line</option>
+              <option>I'd like to start a project</option>
+              <option>I'd like to ask a question</option>
+              <option>I'd like to make a proposal</option>
+            </select>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+        </form><!-- // End form -->
+      </div><!-- // End #container -->
+
+
+
+
+
+</body>   
+<script src="homepage.js"></script>
+</html>
